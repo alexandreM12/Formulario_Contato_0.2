@@ -1,0 +1,211 @@
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh; 
+    background-color: #f2f2f2;
+    padding-top: 20px; 
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.icon {
+    font-size: 0.8rem; 
+     margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+li {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Efeitos no hover */
+a:hover {
+    color: #007BFF; 
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para a seção de captura de foto */
+#cameraStream {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    border-radius: 10px;
+    border: 2px solid #007BFF;
+    margin-bottom: 15px;
+}
+
+#captureButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    width: 18%;
+}
+
+#captureButton:hover {
+    background-color: #218838;
+}
+
+/* (captura de imagem) */
+#cameraCapture {
+    display: none;
+}
+/* Notebook pequeno - até 1024px */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 700px; 
+        padding: 20px; 
+        margin-top: 50px; 
+    }
+
+    .icon {
+        font-size: 2rem; 
+    }
+
+    #cameraStream {
+        width: 50%; 
+    }
+}
+
+/* Notebook grande - até 1440px */
+@media (max-width: 1440px) {
+    .container {
+        max-width: 900px; 
+        padding: 30px; 
+        margin-top: 70px; 
+    }
+
+    .icon {
+        font-size: 2.25rem; 
+    }
+
+    #cameraStream {
+        width: 50%; 
+    }
+}
+/* Mobile S - até 320px */
+@media (max-width: 320px) {
+    .container {
+        max-width: 380px; 
+        padding: 10px;
+        margin-top: 80px;
+    }
+    .icon {
+        font-size: 1rem;
+    }
+    #cameraStream {
+        width: 50%; 
+    }
+}
+
+/* Mobile M - até 375px */
+@media (max-width: 375px) {
+    .container {
+        max-width: 330px; 
+        padding: 12px;
+        margin-top: 80px;
+    }
+    .icon {
+        font-size: 1.75rem;
+    }
+    #cameraStream {
+        width: 50%; 
+    }
+}
+
+/* Mobile L - até 425px */
+@media (max-width: 425px) {
+    .container {
+        max-width: 380px; 
+        margin-top: 80px;
+    }
+    .icon {
+        font-size: 2rem;
+    }
+    #cameraStream {
+        width: 50%; 
+    }
+}
+
+/* Tablet - até 768px */
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px; 
+        padding: 20px;
+        margin-top: 80px;
+    }
+    .icon {
+        font-size: 2.25rem;
+    }
+    #cameraStream {
+        width: 50%; 
+    }
+}
+
